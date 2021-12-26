@@ -3,10 +3,10 @@
 mkdir -p /tmp/smartdns/
 
 
-wget -O /tmp/smartdns/china.conf https://cdn.staticaly.com/gh/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
-wget -O /tmp/smartdns/apple.conf https://cdn.staticaly.com/gh/felixonmars/dnsmasq-china-list/master/apple.china.conf
-wget -O /tmp/smartdns/google.conf https://cdn.staticaly.com/gh/felixonmars/dnsmasq-china-list/master/google.china.conf
-wget -O /tmp/smartdns/bogus-nxdomain.conf https://cdn.staticaly.com/gh/felixonmars/dnsmasq-china-list/master/bogus-nxdomain.china.conf
+wget -O /tmp/smartdns/china.conf https://ghproxy.fsou.cc/https://github.com/felixonmars/dnsmasq-china-list/blob/master/accelerated-domains.china.conf
+wget -O /tmp/smartdns/apple.conf https://ghproxy.fsou.cc/https://github.com/felixonmars/dnsmasq-china-list/blob/master/apple.china.conf
+wget -O /tmp/smartdns/google.conf https://ghproxy.fsou.cc/https://github.com/felixonmars/dnsmasq-china-list/blob/master/google.china.conf
+wget -O /tmp/smartdns/bogus-nxdomain.conf https://ghproxy.fsou.cc/https://github.com/felixonmars/dnsmasq-china-list/blob/master/bogus-nxdomain.china.conf
 
 #合并
 cat /tmp/smartdns/apple.conf >> /tmp/smartdns/china.conf 2>/dev/null
