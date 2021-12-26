@@ -19,4 +19,4 @@ mv -f /tmp/smartdns/china.conf  /etc/smartdns/smartdns-domains.china.conf
 mv -f /tmp/smartdns/bogus-nxdomain.conf  /etc/smartdns/nxdomain.conf
 rm -rf /tmp/smartdns/
 
-/etc/init.d/smartdns reload
+/usr/bin/smartdns reload
